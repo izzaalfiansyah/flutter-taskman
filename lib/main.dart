@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:taskman/constant.dart';
 import 'package:taskman/pages/home.dart';
+import 'package:taskman/pages/notif/index.dart';
 import 'package:taskman/pages/splash.dart';
-import 'package:taskman/pages/task.dart';
+import 'package:taskman/pages/task/create.dart';
+import 'package:taskman/pages/task/index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => Home(),
         '/splash': (context) => Splash(),
         '/task': (context) => Task(),
+        '/task/create': (context) => TaskCreate(),
+        '/notification': (context) => Notif(),
       },
     );
   }

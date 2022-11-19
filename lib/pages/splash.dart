@@ -17,7 +17,7 @@ class SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Timer(Duration(milliseconds: 1500), () {
-      Navigator.of(context).pushNamed('/');
+      Navigator.of(context).pushReplacementNamed('/');
     });
   }
 

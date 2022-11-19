@@ -16,7 +16,7 @@ var menu = [
     'activeIcon': Icons.home,
   },
   {
-    'path': '/notification',
+    'path': '/notif',
     'icon': Icons.notifications_none_outlined,
     'activeIcon': Icons.notifications,
   },

@@ -11,7 +11,7 @@ class BottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -31,11 +31,12 @@ class BottomNav extends StatelessWidget {
             var icon = isActive ? item['activeIcon'] : item['icon'];
             var color = isActive ? cPrimary : Colors.grey;
 
-            return GestureDetector(
-              onTap: () {
+            return IconButton(
+              color: color,
+              onPressed: () {
                 Navigator.of(context).pushReplacementNamed(item['path'] as String);
               },
-              child: Icon(
+              icon: Icon(
                 icon as IconData,
                 color: color,
               ),

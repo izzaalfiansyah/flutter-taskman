@@ -54,7 +54,9 @@ class _TaskState extends State<Task> {
                         child: Material(
                           color: Colors.transparent,
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context).pushNamed('/task/create');
+                            },
                             child: Container(
                               padding: EdgeInsets.all(10),
                               child: Icon(
