@@ -4,7 +4,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:taskman/constant.dart';
-import 'package:taskman/pages/home.dart';
 
 class Splash extends StatefulWidget {
   Splash({Key? key}) : super(key: key);
@@ -18,7 +17,7 @@ class SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Timer(Duration(milliseconds: 1500), () {
-      navigatorPushReplace(context, page: Home());
+      Navigator.of(context).pushReplacementNamed('/');
     });
   }
 
